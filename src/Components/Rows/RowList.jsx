@@ -1,17 +1,14 @@
-
 import React from "react";
-import Row from "../Row/Row";
-import requests from "../../assets/utils/requests";
+import requests from "../../../src/utils/requests";
+import Row from "./Row";
+import "./row.css";
+import instance from "../../utils/Axios";
 
 const RowList = () => {
   return (
     <>
-      <Row
-        title="NETFLIX ORIGINALS"
-        fetchUrl={requests.fetchNetflixOriginals}
-        isLargeRow={true}
-      />
-
+    <p>Row List Starts Here</p>
+      <Row title="NETFLIX ORIGINALS" fetchUrl={requests.fetchNetflixOriginals}isLargeRow={true}/>
       <Row title="Trending Now" fetchUrl={requests.fetchTrending} />
       <Row title="Top Rated" fetchUrl={requests.fetchTopRatedMovies} />
       <Row title="Action Movies" fetchUrl={requests.fetchActionMovies} />
