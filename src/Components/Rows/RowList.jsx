@@ -5,7 +5,6 @@ import requests from "../../utils/requests.js";
 const RowList = () => {
   return (
     <>
-    <h1>List</h1>
       <Row
         title="NETFLIX ORIGINALS"
         fetchUrl={requests.fetchNetflixOriginals}
@@ -16,7 +15,7 @@ const RowList = () => {
       <Row title="Top Rated" fetchUrl={requests.fetchTopRatedMovies} isLargeRow={true}/>
       <Row title="Action Movies" fetchUrl={requests.fetchActionMovies}isLargeRow={true} />
       <Row title="Comedy Movies" fetchUrl={requests.fetchComedyMovies} isLargeRow={true}/>
-      <Row title="Horror Movies" fetchUrl={requests.fetchHorrorMovies} />
+      <Row title="Horror Movies" fetchUrl={requests.fetchHorrorMovies} isLargeRow={true} />
       <Row title="Romance Movies" fetchUrl={requests.fetchRomanceMovies} />
       <Row title="Tv Shows" fetchUrl={requests.fetchTvShow} />
       <Row title="Documentaries" fetchUrl={requests.fetchDocumentaries} />
