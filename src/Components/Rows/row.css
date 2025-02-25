@@ -32,3 +32,9 @@
 .row_posterLarge:hover {
   transform: scale(1.09);
 }
+@media screen and (max-width: 768px){
+  .row_posters {
+    flex-wrap: wrap;
+    overflow-x: auto;
+  }
+}

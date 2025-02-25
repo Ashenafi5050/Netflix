@@ -4,6 +4,7 @@ import "./row.css";
 import movieTrailer from "movie-trailer";
 import YouTube from "react-youtube";
 
+// eslint-disable-next-line react/prop-types
 const Row = ({ title, fetchUrl, isLargeRow }) => {
   const [movies, setMovies] = useState([]);
   const [trailerUrl, setTrailerURL] = useState("");

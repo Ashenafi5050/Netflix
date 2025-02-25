@@ -2,7 +2,7 @@ import "./banner.css";
 import axios from "../../utils/Axios";
 import requests from "../../utils/requests";
 import { useState, useEffect } from "react";
-import instance from "../../utils/Axios";
+// import instance from "../../utils/Axios";
 
 const Banner = () => {
   const [movie, setMovie] = useState({});
@@ -42,6 +42,7 @@ const Banner = () => {
         backgroundImage: `url('https://image.tmdb.org/t/p/original${movie?.backdrop_path}')`,
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
+        height:"100vh"
       }}
     >
       <div className="banner_contents">

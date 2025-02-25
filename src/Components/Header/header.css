@@ -11,17 +11,21 @@
     align-items: center;
 /* background-color: rgb(148, 132, 132); */ 
     background-color: rgb(20, 20, 20);
-    /* background-color: transparent; */
     height: 10vh;
     color: white;
     transition:all 0.5s; 
     transition-timing-function: ease-in;
     z-index: 1;
-    background-color: rgb(12, 12, 12);
+    /* background-color: rgb(12, 12, 12); */
+}
+.header_outer_container:hover{
+    background-color: transparent;
+    cursor: pointer;
+
 }
 
 .nav_black{
-    background-color: rgb(20, 20, 20);
+    background-color: rgb(68, 61, 61);
 }
 
 .header_container{
@@ -50,4 +54,17 @@
     cursor: pointer;
     /* background-color: lightgreen; */
 }
-
+@media screen and (max-width: 480px){
+    .header_outer_container {
+        height: 8vh;
+        flex-direction: column;
+      }
+    
+      .header_left ul,
+      .header_right ul {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+      }
+    
+}
